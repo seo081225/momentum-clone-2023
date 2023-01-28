@@ -43,8 +43,23 @@ body {
     display: none;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+li :last-child {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 button {
@@ -53,6 +68,23 @@ button {
     background-color: transparent;
     top: 30%;
     opacity: 0.6;
+}
+
+#todo-input {
+    width: 90%;
+    margin: 10px;
+    padding: 0;
+    font-size: 20px;
+    background-color: transparent;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1;
+    color: #111111;
+}
+
+input:focus {
+    outline: none;
 }
 
 .todo-done {
