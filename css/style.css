@@ -1,4 +1,5 @@
 @import "owfont-regular.css";
+@import "login.css";
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@900&display=swap");
 
 body {
@@ -70,7 +71,7 @@ button {
     opacity: 0.6;
 }
 
-#todo-input {
+input {
     width: 90%;
     margin: 10px;
     padding: 0;
@@ -81,6 +82,7 @@ button {
     border-top-width: 0;
     border-bottom-width: 1;
     color: #111111;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 input:focus {
@@ -99,6 +101,7 @@ input:focus {
 }
 
 #left-category {
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -116,11 +119,14 @@ input:focus {
 }
 
 #mid-category {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
 }
 
-#mid-category div {
-    float: inline-end;
+#quote {
+    display: flex;
+    justify-content: flex-end;
 }
