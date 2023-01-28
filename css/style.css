@@ -1,0 +1,94 @@
+@import "owfont-regular.css";
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@900&display=swap");
+
+body {
+    color: #111111;
+    font-family: "Gowun Dodum", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+#date {
+    display: flex;
+    flex-direction: column;
+}
+
+#today,
+#clock {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+#today {
+    font-size: 24px;
+}
+
+#weather strong {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.weather-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-size: 20px;
+    border-color: transparent;
+    background-color: transparent;
+    top: 30%;
+    opacity: 0.6;
+}
+
+.todo-done {
+    text-decoration: line-through;
+    text-decoration-color: #e9b80b;
+    text-decoration-thickness: 2px;
+    opacity: 0.5;
+}
+
+.todo-done--btn {
+    color: #e9b80b;
+}
+
+#left-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#left-category .main-obj {
+    margin-bottom: 30px;
+}
+
+.main-obj {
+    width: 20vw;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#mid-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#mid-category div {
+    float: inline-end;
+}
