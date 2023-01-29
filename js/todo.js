@@ -20,7 +20,6 @@ function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
-    console.log(toDos);
     saveToDos();
 }
 
@@ -43,7 +42,7 @@ function changeFlag(event) {
     for (let i = 0; i < toDos.length; i++) {
         if (toDos[i].id === parseInt(li.id)) toDos[i].flag = children[1].innerText;
     }
-    console.log(toDos);
+
     saveToDos();
 }
 

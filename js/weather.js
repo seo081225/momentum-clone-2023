@@ -18,7 +18,6 @@ function onGeoOK(position) {
             let id = data.weather[0].id;
 
             if (800 <= parseInt(id) && parseInt(id) <= 802) {
-                console.log(id);
                 const icon = data.weather[0].icon;
                 id += "-" + icon.substring(icon.length - 1, icon.length);
             }
